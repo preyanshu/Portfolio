@@ -68,16 +68,7 @@ const Projects = () => {
   <i class="fa-brands fa-github fa-xl mx-5"></i>
 </div>
 </div>
-       <div class="card" style={{width:18+"rem"}} data-aos="zoom-in-down">
-{/* <img src="animation_lkr6ocyv_small.gif" class="card-img-top" alt="..."/> */}
-<div className="card-imp-top text-center container d-flex justify-content-center align-items-center" style={{height:17+"rem"}}><h1 >PROJECT 6</h1></div>
-<div class="card-body">
-  <h5 class="card-title">Project title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  <a href="#" class="btn btn-dark d-inline  " >coming soon</a>
-  <i class="fa-brands fa-github fa-xl mx-5"></i>
-</div>
-</div>
+
 
 
       
