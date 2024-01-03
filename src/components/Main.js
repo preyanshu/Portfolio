@@ -84,7 +84,7 @@ const Main = () => {
 {!click&&<div className="menu" data-aos="fade-up">
     <h1 className="text-center"><b>Menu</b></h1>
 <ul class="list-group  my-3 mt-3">
-<Link to="/"><motion.li whileHover={{scale:1.1}} whileTap={{scale:0.9}} animate={{duration:1,delay:0}}class="list-group-item mt-3"> <i class="fa-solid fa-link fa-lg"></i>   Resume.(soon)</motion.li></Link>
+<Link to="https://drive.google.com/file/d/1SyLvyrmE7uzfjwU47dy8kvPrgZv5DIXv/view?usp=sharing"><motion.li whileHover={{scale:1.1}} whileTap={{scale:0.9}} animate={{duration:1,delay:0}}class="list-group-item mt-3"> <i class="fa-solid fa-link fa-lg"></i>   Resume</motion.li></Link>
     <Link to="/projects"><motion.li whileHover={{scale:1.1}} whileTap={{scale:0.9}} animate={{duration:1,delay:0}} class="list-group-item mt-3" > <i class="fa-solid fa-play fa-lg"></i>     Projects.</motion.li></Link>
     <Link to="/skills"><motion.li whileHover={{scale:1.1}} whileTap={{scale:0.9}} animate={{duration:1,delay:0}}class="list-group-item mt-3"> <i class="fa-solid fa-play fa-lg"></i>     Skills.</motion.li></Link>
     <Link to="/about"><motion.li whileHover={{scale:1.1}} whileTap={{scale:0.9}} animate={{duration:1,delay:0}}class="list-group-item mt-3"> <i class="fa-solid fa-play fa-lg"></i>     About.</motion.li></Link>
