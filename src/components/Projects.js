@@ -2,6 +2,81 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import {motion} from "framer-motion"
 
+const cardDetails = [
+  {
+    title: "RepoDeployer",
+    imageSrc: "server architecture.png",
+    description: "Facilitates super easy webpage deployment through GitHub URLs with the support of AWS, Docker, and more. Utilized AWS, Docker, and Redis for efficient and scalable deployment infrastructure.",
+    demoLink: "https://photos.google.com/share/AF1QipM9wqKL_BnmlyORzwXWi1wzwHtTkUyy4ES1jpLqlF9KScxeDNRavwP8zXorPzKpHg?key=amdMOFY4SnhFYzlUMUo1NVVXT1dNMTI0UWQtNHpB",
+    githubLink: "https://github.com/preyanshu/repoDeployer"
+  },
+  {
+    title: "Motion Amplification Vibration Monitoring System",
+    imageSrc: "magnification.png",
+    description: "Health Monitoring System: Integrated Eulerian and phase-based vibrational magnification with Video Magnification.",
+    demoLink: "https://github.com/preyanshu/Video_magnification",
+    githubLink: "https://github.com/preyanshu/Video_magnification"
+  },
+  {
+    title: "DevSync",
+    imageSrc: "devsync.png",
+    description: "A cloud-based MERN Note-taking web app with Signup + Login feature with the help of JWT tokens and usage of encryptions for storage of passwords in MongoDB.",
+    demoLink: "https://social-ecru-one.vercel.app/",
+    githubLink: "https://github.com/preyanshu?tab=repositories&q=notes&type=&language=&sort="
+  },
+  {
+    title: "CloudNotes (sem-2)",
+    imageSrc: "notes.png",
+    description: "A cloud-based MERN Note-taking web app with Signup + Login feature with the help of JWT tokens and usage of encryptions for storage of passwords in MongoDB.",
+    demoLink: "https://cloud-notes-3pdx.onrender.com/",
+    githubLink: "https://github.com/preyanshu?tab=repositories&q=notes&type=&language=&sort="
+  },
+  {
+    title: "BankingSystem (sem-2)",
+    imageSrc: "Screenshot 2023-08-03 130642.png",
+    description: "A MERN web app simulation of the banking system which uses MongoDB Atlas to store transactions between users and their records.",
+    demoLink: "https://sparks-frontend.onrender.com/",
+    githubLink: "https://github.com/preyanshu?tab=repositories&q=sparks&type=&language=&sort="
+  },
+  {
+    title: "NeuralNav (sem-2)",
+    imageSrc: "Screenshot 2023-08-03 131225.png",
+    description: "A self-help bot made using simple HTML, CSS, JS for frontend and Node.js for backend.",
+    demoLink: "https://selfhelpbot.onrender.com/",
+    githubLink: "https://github.com/preyanshu?tab=repositories&q=neuralN&type=&language=&sort="
+  },
+  {
+    title: "To-do app (sem-2)",
+    imageSrc: "Screenshot 2023-08-03 project 4.png",
+    description: "A web app using Angular in which people can store write their to-do tasks.",
+    demoLink: "https://todolist-angular-55tk.onrender.com/",
+    githubLink: "https://github.com/preyanshu/todolist_angular"
+  },
+  {
+    title: "Taxi app (sem-3)",
+    imageSrc: "5.png",
+    description: "A taxi web app using MERN stack using which we will be able to book a taxi for ourselves at the cheapest price available.",
+    demoLink: "#",
+    githubLink: ""
+  }
+];
+
+
+
+const Card = ({ title, imageSrc, description, demoLink, githubLink }) => (
+  <div className="card topcards" data-aos="zoom-in-down" style={{ width: 18 + "rem" }}>
+    <img src={imageSrc} className="card-img-top" alt="..." style={{height:"220px"}} />
+    <div className="card-body" style={{height:"270px",position:"relative"}}>
+      <h5 className="card-title">{title}</h5>
+      <p className="card-text">{description}</p>
+      <div style={{position:"absolute",bottom:"20px"}}>
+      <a href={demoLink} target='_blank' rel="noopener noreferrer" className="btn btn-dark d-inline">View Demo</a>
+      <a href={githubLink} target='_blank' rel="noopener noreferrer"><i className="fa-brands fa-github fa-xl mx-5"></i></a>
+      </div>
+    </div>
+  </div>
+);
+
 const Projects = () => {
   return (<>
 
@@ -16,58 +91,9 @@ const Projects = () => {
          
         {/* <div className="container" style={{width:100+"vw",height:40+"vh"}}> */}
         <div className="projectbody">
-          
-       
-          
-          <div class="card topcards" data-aos="zoom-in-down" style={{width:18+"rem"}}>
-<img src="notes.png" class="card-img-top" alt="..."/>
-<div class="card-body">
-  <h5 class="card-title">CloudNotes (sem-2)</h5>
-  <p class="card-text">A cloud based MERN Note taking web app with Signup + Login feature with the help of jwt tokens and usage of encryptions for storage of passwords in mongoDB</p>
-  <a href="https://cloud-notes-3pdx.onrender.com/" target='true' class="btn btn-dark d-inline  ">View Demo</a>
-  <a href="https://github.com/preyanshu?tab=repositories&q=notes&type=&language=&sort=" target='true' ><i class="fa-brands fa-github fa-xl mx-5"></i></a>
-  
-</div>
-</div>
-       <div class="card topcards card2"data-aos="zoom-in-down" style={{width:18+"rem"}}>
-<img src="Screenshot 2023-08-03 130642.png" class="card-img-top" alt="..."/>
-<div class="card-body">
-  <h5 class="card-title">BankingSystem (sem-2)</h5>
-  <p class="card-text">A MERN web app simulation of the banking system which uses MongoDB atlas to store transaction between users and their records </p>
-  <a href="https://sparks-frontend.onrender.com/" target='true' class="btn btn-dark d-inline  ">View Demo</a>
-  <a href="https://github.com/preyanshu?tab=repositories&q=sparks&type=&language=&sort=" target='true'> <i class="fa-brands fa-github fa-xl mx-5"></i></a>
- 
-</div>
-</div>
-       <div class="card" style={{width:18+"rem"}} data-aos="zoom-in-down">
-<img src="Screenshot 2023-08-03 131225.png" class="card-img-top" alt="..."/>
-<div class="card-body">
-  <h5 class="card-title">NeuralNav (sem-2)</h5>
-  <p class="card-text">A self help bot made using simple Html,Css,Js for frontend and nodejs for backend</p>
-  <a href="https://selfhelpbot.onrender.com/" target='true' class="btn btn-dark d-inline  ">View Demo</a>
-  <a href="https://github.com/preyanshu?tab=repositories&q=neuralN&type=&language=&sort=" target='true'> <i class="fa-brands fa-github fa-xl mx-5"></i></a>
- 
-</div>
-</div>
-       <div class="card" style={{width:18+"rem"}} data-aos="zoom-in-down">
-<img src="Screenshot 2023-08-03 project 4.png" class="card-img-top" alt="..."/>
-<div class="card-body">
-  <h5 class="card-title">To-do app (sem-2)</h5>
-  <p class="card-text">A web app using Angular in which people can store write their to-do tasks</p>
-  <a href="https://todolist-angular-55tk.onrender.com/"  target="true" class="btn btn-dark d-inline  ">View Demo</a>
-  <a href="https://github.com/preyanshu/todolist_angular" target='true'> <i class="fa-brands fa-github fa-xl mx-5"></i></a>
- 
-</div>
-</div>
-       <div class="card" style={{width:18+"rem"}} data-aos="zoom-in-down">
-<img src="5.png" class="card-img-top" alt="..."/>
-<div class="card-body">
-  <h5 class="card-title">taxi app (sem-3) </h5>
-  <p class="card-text">A taxi web app using MERN stack using which we will be able to book taxi for ourself at the cheapest price available</p>
-  <a href="#" class="btn btn-dark d-inline  ">coming soon</a>
-  <i class="fa-brands fa-github fa-xl mx-5"></i>
-</div>
-</div>
+        {cardDetails.map((card, index) => (
+      <Card key={index} {...card} />
+    ))}
 
 
 
@@ -80,7 +106,7 @@ const Projects = () => {
             {/* // </div> */}
          
          
-            <div className="icons" data-aos="fade-up">
+            <dyiv className="icons" data-aos="fade-up">
                 <div className="icon1">
                 <Link id="icon1" className='mainicon' to="https://github.com/preyanshu" target='true'><motion.i initial={{height:0}}
     animate={{height:"20px"}} 
@@ -102,7 +128,7 @@ const Projects = () => {
 
 
                 </div>
-            </div>
+            </dyiv>
             {/* <img src="ac334431-3904-4d75-ac4a-b7c9b955a1f0.gif" alt="" className="rocket" /> */}
             {/* <img src="d4bf7860-d9cb-426f-89c4-09f6052f1028.gif" alt="" className="moon" /> */}
             <img src="859d4940-7be4-4a4f-8a43-984ac5d9b8d0.gif" alt="" className="astronaut" />

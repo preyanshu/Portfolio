@@ -14,7 +14,7 @@ const Intro = () => {
         <div className="text">
           <h1>Hi,</h1>
           <h3>I,m Preyanshu</h3>
-          <h6>I,m a fullstack mern developer and love bring life into my ideas</h6>
+          <h6>I am a FullStack MERN/Next.js developer, additionally adept in DevOps.</h6>
           
         </div>
       </div>

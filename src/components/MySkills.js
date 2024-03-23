@@ -25,7 +25,7 @@ const MySkills = () => {
             <h4 className="title"><i class="fa-solid fa-code fa-beat-fade fa-sm"></i> Skills</h4>
             <br />
             <br />
-            <h5>Html+Css+Js</h5> 
+            <h5>MERN</h5> 
             <div class="progress" style={{border:3+"px solid black"}}>
   <motion.div initial={{width:0}}
                 animate={{width:90+"%"}} 
@@ -36,10 +36,10 @@ const MySkills = () => {
   </motion.div>
 </div>
 <br/>
-            <h5>React+Redux</h5> 
+            <h5>NextJs</h5> 
             <div class="progress" style={{border:3+"px solid black"}}>
   <motion.div initial={{width:0}}
-                animate={{width:70+"%"}} 
+                animate={{width:90+"%"}} 
                 transition={{type:"spring",duration:0.5,delay:0}}
              class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style={{width:70+"%",borderRight:3+"px solid black",backgroundColor:"grey"}}>
@@ -47,10 +47,10 @@ const MySkills = () => {
   </motion.div>
 </div>
 <br/>
-            <h5>Node+Mongodb+Express</h5> 
+            <h5>Devops</h5> 
             <div class="progress" style={{border:3+"px solid black"}}>
   <motion.div initial={{width:0}}
-                animate={{width:80+"%"}} 
+                animate={{width:70+"%"}} 
                 transition={{type:"spring",duration:0.5,delay:0}}
              class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style={{width:80+"%",borderRight:3+"px solid black",backgroundColor:"grey"}}>
@@ -68,7 +68,7 @@ const MySkills = () => {
             <h4 className="title"><i class="fa-solid fa-laptop-code fa-beat-fade fa-sm"></i> Fullstack developer</h4>
             <div className="descskills">
 
-            I am a skilled and dedicated MERN full-stack web developer, i enjoy bringing new ideas to life.
+            I am a skilled and dedicated MERN/NextJs full-stack web developer, i enjoy bringing new ideas to life.
 
 <br/>
 <br/>
@@ -76,7 +76,7 @@ const MySkills = () => {
 <strong className='mt-5'>Skills</strong>
 <br/>
 <p>
-Html, Css, Js, React, Redux, Nodejs, Express, Bootstrap, Mongodb, Angular etc.
+MERN,NextJs,Redis,Docker,Kafka,<br></br>CI/CD,Nodejs,Express,Bootstrap,etc.
 </p>
 </div>
 
