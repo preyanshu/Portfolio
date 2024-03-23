@@ -66,7 +66,7 @@ const cardDetails = [
 const Card = ({ title, imageSrc, description, demoLink, githubLink }) => (
   <div className="card topcards" data-aos="zoom-in-down" style={{ width: 18 + "rem" }}>
     <img src={imageSrc} className="card-img-top" alt="..." style={{height:"220px"}} />
-    <div className="card-body" style={{height:"270px",position:"relative"}}>
+    <div className="card-body" style={{height:"300px",position:"relative"}}>
       <h5 className="card-title">{title}</h5>
       <p className="card-text">{description}</p>
       <div style={{position:"absolute",bottom:"20px"}}>
